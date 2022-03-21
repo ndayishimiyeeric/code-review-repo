@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey | Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Microverse Trials session</h1>
+        <p id="description">this session is done by Eric and Toka</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name"></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"></label>
+          <input
+            type="number"
+            name="Age"
+            id="number"
+            min="20"
+            max="100"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-control">
+          <p>What is your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected>current role</option>
+            <option value="students">student</option>
+            <option value="Job">jod</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What would you recommend to microverse?</p>
+          <label>
+            <input
+              name="user-recommendation"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />
+            definitely
+          </label>
+
+          <label>
+            <input
+              name="user-recommendation"
+              type="radio"
+              value="Maybe"
+              class="input-radio"
+            />
+            Maybe
+          </label>
+        </div>
+        <div class="form-group">
+          <p>What is your favorite feature of Microverse?</p>
+          <label>
+            <input
+              name="user-prefer"
+              type="checkbox"
+              value="Trials"
+              class="input-checkbox"
+            />
+            Trials
+          </label>
+          <label>
+            <input
+              name="user-prefer"
+              type="checkbox"
+              value="WholeProgram"
+              class="input-checkbox"
+            />
+            Whole Program
+          </label>
+          <label>
+            <input
+              name="user-prefer"
+              type="checkbox"
+              value="Motivations"
+              class="input-checkbox"
+            />
+            Motivations
+          </label>
+        </div>
+        <div class="form-control">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here "
+          >
+          </textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
